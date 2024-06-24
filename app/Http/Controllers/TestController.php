@@ -8,6 +8,20 @@ use App\Models\Product;
 
 class TestController extends Controller
 {
+
+    //list of URL API
+/*
+ * http://127.0.0.1:8000/api/register     -->POST
+ * http://127.0.0.1:8000/api/login        -->POST
+ * http://127.0.0.1:8000/api/userinfo     -->GET
+ * http://127.0.0.1:8000/api/products     -->GET
+ * http://127.0.0.1:8000/api/products     -->POST
+ * http://127.0.0.1:8000/api/products/2   -->PUT
+ * http://127.0.0.1:8000/api/products/3   -->GET
+ * http://127.0.0.1:8000/api/products/6   -->DELETE
+ *
+ * */
+
     public function index()
     {$products = Product::all();
         return response()->json([
